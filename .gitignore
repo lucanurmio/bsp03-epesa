@@ -2,3 +2,6 @@
 localMailbox.mbox
 # The PKCS7 file that is generated whenever "appSmail.py" is used to retrieve emails. It is used as an intermediary storage to store the latest email before it is decrypted.
 encrypt.p7
+# The PGP public and private keys (ASC filetype, needed for "appPGPy.py") and the S/MIME certificates and keypairs (PEM filetype, needed for "appSmail.py").
+*.asc
+*.pem

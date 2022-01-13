@@ -11,7 +11,7 @@ The host file of the OS must contain the following entries:
 127.0.0.1  pop3.lmail.test
 ```
 
-An "Apache James" mail server must be running locally, with port 25 for SMTP and 110 for POP3. The mail server must contain the domain ´lmail.test´ as well as email users (addresses) with that domain. These email users will be able to send emails to each other.
+An mail server must be running locally, with port 25 for SMTP and 110 for POP3. The mail server must contain the domain ´lmail.test´ as well as email users (addresses) with that domain. These email users will be able to send emails to each other.
 ### For "appGNUPG.py"
 GNU Privacy Guard (GNUPG) must be installed and at least 1 PGP profile must be created with it.
 
@@ -28,3 +28,5 @@ There must be at least 2 .pem files located in the same directory as the email c
 For sending emails, the certificate filename must be entered in the email client. For retrieving emails, the certificate filename as well as the keypair filename must be entered.
 
 The file "jerry.pem" (certificate) and "jerry\_key.pem" (keypair) have been provided as examples.
+## Remarks
+The mail server used for testing was an "Apache James" mail server. The OS this was tested on is Ubuntu, which has GNUPG pre-installed by default.

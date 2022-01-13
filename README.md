@@ -4,11 +4,13 @@ Epesa is a shorthand for Encrypted Python Email Sending App, and refers to the B
 Each of the python files represents a different email client, however all 4 of them are based on "app.py". Each is only designed to receive emails sent out by an instance of itself.
 ## How to send emails
 The host file of the OS must contain the following entries:
+
 ´´´
 127.0.0.1  lmail.test
 127.0.0.1  smtp.lmail.test
 127.0.0.1  pop3.lmail.test
 ´´´
+
 An "Apache James" mail server must be running locally, with port 25 for SMTP and 110 for POP3. The mail server must contain the domain ´lmail.test´ as well as email users (addresses) with that domain. These email users will be able to send emails to each other.
 ### For "appGNUPG.py"
 GNU Privacy Guard (GNUPG) must be installed and at least 1 PGP profile must be created with it.
